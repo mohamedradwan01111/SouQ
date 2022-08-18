@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table text-center p-2 w-75 mx-auto border ">
+        <thead>
+            <th>index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>DateOfBirth</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of users ; ;let i =index ">
+                <td>{{i}}</td>
+                <td>{{x.name}}</td>
+                <td>{{x.age}}</td>
+                <td>{{x.gender}}</td>
+                <td>{{x.salary}}</td>
+                <td>{{x.dateofBirth}}</td>
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>
